@@ -82,3 +82,29 @@ fs.unlink('testingfile.txt', function (err) {
 
 
 
+// To create object
+
+school={
+    student:{
+        name1:"Anmol",
+        name2:"Akash",
+        name3:"vikash",
+    },
+   studentType:{
+       class:"12th",
+       stream:"Non-Med",
+   },
+   UsersPhoto:{
+       P1:"photo1",
+       p2:"photo2",
+       p3:"photo3",
+   },
+   func: function print()
+   {
+       console.log("Name of the Students ",this.student.name1);
+       console.log("Student Type",this.studentType.class)
+       console.log("Users Photos",this.UsersPhoto.P1)
+   }
+};
+school.func()
+
